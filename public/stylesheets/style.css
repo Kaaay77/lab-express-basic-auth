@@ -6,3 +6,35 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+  height: 50vh;
+  
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+#form h2{
+  font-size: 4em;
+}
+.form label{
+  font-size: 2.5em;
+}
