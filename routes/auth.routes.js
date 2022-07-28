@@ -10,6 +10,10 @@ router.get('/sign-up', (req, res, next) => res.render('sign-up'));
 
 router.post('/sign-up',(req, res, next) => {
   const {username, password} = req.body;
+  if ( username === "" || password === ""){
+    res.render('login', {errorMessage: 'Pon el nombre i la pass, me cago en tooooooo.'});
+    return
+  }
 
   bcryptjs
   .genSalt(saltRounds)

@@ -1,5 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -37,4 +40,28 @@ a {
 }
 .form label{
   font-size: 2.5em;
+}
+
+#navBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+  background-color: #00B7FF;
+  height: 4em;
+}
+
+#navBar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7em;
+  border: 1px solid #fff;
+  padding: 5px 40px;
+  border-radius: 20px;
+}
+
+#navBar a:hover{
+  color: #00B7FF;
+  background-color: #fff;
 }
