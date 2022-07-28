@@ -72,7 +72,7 @@ router.get('/private', isLoggedIn, (req,res,next) =>{
   res.render('users/private', { userInSession: req.session.currentUser });
 })
 
-router.get('/userPprofile', isLoggedIn, (req,res,next) =>{
+router.get('/user-profile', isLoggedIn, (req,res,next) =>{
 
   res.render('users/user-profile', { userInSession: req.session.currentUser });
 })
